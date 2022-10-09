@@ -1,0 +1,593 @@
+knavalbattle (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+  * Fix up libkf5kdegames-dev version.
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:19:28 +0900
+
+knavalbattle (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Eshat Cakar, George Kiagiadakis, Maximiliano Curia, Modestas
+    Vainius from the uploaders, thanks for your work on the package!
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 28 Apr 2021 10:33:45 +0900
+
+knavalbattle (4:20.12.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Re-export upstream signing key without extra signatures.
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+  * Update the build dependencies according to the upstream build system:
+    - bump Qt packages to 5.10.0
+    - bump KF packages to 5.46.0
+  * Bump the debhelper compatibility to 13:
+    - switch the debhelper-compat build dependency to 13
+  * Bump Standards-Version to 4.5.1, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 08 Jan 2021 09:20:21 +0100
+
+knavalbattle (4:20.04.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update watch file to the new release-service location.
+  * Drop the Debian man page, as it is outdated, and it offers no useful
+    information.
+  * Update the build dependencies according to the upstream build system:
+    - bump cmake to 3.5
+    - explicitly add gettext
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - call the right debhelper command instead of $(overridden_command)
+    - manually force the generation of the substvars for the kde-l10n breaks
+  * Bump the debhelper compatibility to 12:
+    - switch the debhelper build dependency to debhelper-compat 12
+    - remove debian/compat
+  * Add Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0, no changes required.
+  * Switch cmake parameter BIN_INSTALL_DIR to KDE_INSTALL_BINDIR, as the former
+    is deprecated.
+  * Add the configuration for the CI on salsa.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 02 Aug 2020 10:14:29 +0200
+
+knavalbattle (4:18.04.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (18.04.1).
+  * Update Vcs links to salsa.
+  * Use secure copyright format uri.
+  * Bump Standards-Version to 4.1.4 (No changes needed).
+  * Bump debhelper build-dep and compat to 11.
+  * Update build-deps and deps with the info from cmake
+  * Update copyright file for new upstream.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 29 May 2018 02:30:35 +0200
+
+knavalbattle (4:17.08.3-3) unstable; urgency=medium
+
+  * Team upload.
+  * Remove the transitional package kbattleship. (Closes: #878637)
+  * Stop forcing the local installation directory, since there is only one
+    binary now.
+  * Bump Standards-Version to 4.1.3, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 20 Jan 2018 10:42:09 +0100
+
+knavalbattle (4:17.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Adjust again l10npkgs_firstversion_ok to the fixed version of kde-
+    l10n.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 20 Nov 2017 20:56:31 +0100
+
+knavalbattle (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Maximiliano Curia ]
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update uploaders list as requested by MIA team (Closes: #879355)
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will
+    drop translations.
+  * Bump Standards-Version to 4.1.1, no changes required.
+  * Simplify watch file, and switch it to https.
+  * Install everything directly to the local installation directory of
+    knavalbattle, so a knavalbattle.install is no more needed.
+  * Remove the unused libkf5kdelibs4support-dev build dependency.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 18 Nov 2017 16:27:43 +0100
+
+knavalbattle (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 14:01:49 +0000
+
+knavalbattle (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:38:15 +0000
+
+knavalbattle (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:22:44 +0000
+
+knavalbattle (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:22:40 +0000
+
+knavalbattle (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:20:09 +0000
+
+knavalbattle (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:04:52 +0000
+
+knavalbattle (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:49:23 +0000
+
+knavalbattle (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 17:00:09 +0000
+
+knavalbattle (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:21:04 +0000
+
+knavalbattle (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:29:55 +0000
+
+knavalbattle (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:53:41 +0000
+
+knavalbattle (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:40:23 +0000
+
+knavalbattle (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:07:26 +0000
+
+knavalbattle (4:16.08.0-1) unstable; urgency=medium
+
+  * New upstream release (16.08.0)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 19 Oct 2016 00:11:46 +0200
+
+knavalbattle (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:49:10 +0000
+
+knavalbattle (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 12 Jul 2016 11:37:53 +0000
+
+knavalbattle (4:16.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Jul 2016 16:11:27 +0000
+
+knavalbattle (4:16.04.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * Remove menu file and friends
+  * New upstream release (15.12.2).
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 28 May 2016 19:37:31 +0200
+
+knavalbattle (4:15.12.0-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:24:16 +0100
+
+knavalbattle (4:14.12.3-1) experimental; urgency=medium
+
+  * New upstream release (14.12.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 29 Mar 2015 15:13:16 +0200
+
+knavalbattle (4:14.12.3-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 13:57:02 -0700
+
+knavalbattle (4:14.12.2-1) experimental; urgency=medium
+
+  * New upstream release (14.12.2).
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 22 Feb 2015 16:03:19 +0100
+
+knavalbattle (4:14.12.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 08:49:47 -0800
+
+knavalbattle (4:14.12.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Remove kdelibs5-dev depend version as there was not a new release.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 16:17:29 +0100
+
+knavalbattle (4:14.11.97-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release candidate
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 02 Dec 2014 21:41:33 -0800
+
+knavalbattle (4:14.11.95-0ubuntu1) vivid; urgency=medium
+
+  * Initial release for KDE applications 14.12 series
+   - Change maintainer to Debian/Kubuntu
+   - Remove X-Unbuntu entries no longer applicable.
+   - Fix Watch file applications locations
+   - Fix VCS for new kde-applications location
+  * Debian merge, no remaining changes.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 26 Nov 2014 17:15:24 +0000
+
+knavalbattle (4:4.14.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 05:36:24 -0700
+
+knavalbattle (4:4.14.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Mon, 22 Sep 2014 17:22:57 +0200
+
+knavalbattle (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Aug 2014 13:15:25 +0200
+
+knavalbattle (4:4.13.97-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release RC
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 01 Aug 2014 16:57:47 +0200
+
+knavalbattle (4:4.13.95-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Wed, 30 Jul 2014 18:24:53 +0200
+
+knavalbattle (4:4.13.90-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Thu, 24 Jul 2014 23:18:52 +0200
+
+knavalbattle (4:4.13.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 29 Jul 2014 23:11:32 +0200
+
+knavalbattle (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+  * Merge with Debian, no changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 17 Jun 2014 10:41:54 +0100
+
+knavalbattle (4:4.13.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 23 May 2014 10:06:31 +0200
+
+knavalbattle (4:4.12.4-1) unstable; urgency=medium
+
+  * Add kbattleship transitional package.
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:25:29 +0200
+
+knavalbattle (4:4.12.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Binary package renamed to knavalbattle.
+  * Update install files.
+  * Bump kde-sc-dev-latest build dependency.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:32:33 +0100
+
+knavalbattle (4:4.11.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Do not disable an empty test set.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 30 Jan 2014 14:21:54 +0100
+
+knavalbattle (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 07 Nov 2013 14:28:25 +0100
+
+knavalbattle (4:4.11.2-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 07 Oct 2013 15:29:38 +0200
+
+knavalbattle (4:4.10.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 15:56:04 +0200
+
+knavalbattle (4:4.10.4-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update vcs fields.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 10:54:44 +0200
+
+knavalbattle (4:4.10.2-1) experimental; urgency=low
+
+  * First release of kdegames after being split by upstream.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 10 Apr 2013 15:51:01 +0200
+
+knavalbattle (4:4.13.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream KDE Software Compilation release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Apr 2014 22:08:39 +0100
+
+knavalbattle (4:4.12.97-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 02 Apr 2014 11:33:04 +0200
+
+knavalbattle (4:4.12.95-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 23 Mar 2014 12:34:43 +0100
+
+knavalbattle (4:4.12.90-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 11:05:05 +0000
+
+knavalbattle (4:4.12.3-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Mar 2014 20:54:58 +0100
+
+knavalbattle (4:4.12.2-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 05 Feb 2014 00:07:15 +0000
+
+knavalbattle (4:4.12.1-0ubuntu1) trusty; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 16 Jan 2014 08:23:17 +0000
+
+knavalbattle (4:4.12.0-0ubuntu1) trusty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Dec 2013 17:15:32 +0000
+
+knavalbattle (4:4.11.97-0ubuntu1) trusty; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 29 Nov 2013 13:16:09 +0000
+
+knavalbattle (4:4.11.95-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 25 Nov 2013 18:13:25 +0100
+
+knavalbattle (4:4.11.80-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+  * Update install files
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 23 Nov 2013 17:44:52 +0100
+
+knavalbattle (4:4.11.2-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 30 Sep 2013 14:31:39 +0100
+
+knavalbattle (4:4.11.1-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 06 Sep 2013 22:27:01 +0100
+
+knavalbattle (4:4.11.0-0ubuntu1) saucy; urgency=low
+
+  [ Howard Chan ]
+  * New upstream release
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 14 Aug 2013 00:21:45 +0100
+
+knavalbattle (4:4.10.97-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC 2 release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 26 Jul 2013 19:42:09 +0100
+
+knavalbattle (4:4.10.95-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 19 Jul 2013 12:32:45 +0000
+
+knavalbattle (4:4.10.90-0ubuntu1) saucy; urgency=low
+
+  * New upstream bet release
+
+ -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:18:30 +0100
+
+knavalbattle (4:4.10.80-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 21 Jun 2013 01:26:13 +0100
+
+knavalbattle (4:4.10.4-0ubuntu1) saucy-proposed; urgency=low
+
+  [ Rohan Garg ]
+  * New upstream bugfix release
+
+  [ Jonathan Riddell ]
+  * remove incorrect knavalbattle.menu
+  * translational Priority: extra
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 07 Jun 2013 00:37:33 +0100
+
+knavalbattle (4:4.10.3-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+  * Merge with Debian, remaining change:
+   - rename binary from kbattleship to knavalbattle
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 23 May 2013 11:04:46 +0000
+
+knavalbattle (4:4.10.2-1) experimental; urgency=low
+
+  * First release of kdegames after being split by upstream.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 10 Apr 2013 15:51:01 +0200
+
+knavalbattle (4:4.10.2-0ubuntu1) raring; urgency=low
+
+  * New upstream bugfix release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 31 Mar 2013 14:52:54 +0200
+
+knavalbattle (4:4.10.1-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 05 Mar 2013 16:33:51 +0000
+
+knavalbattle (4:4.10.0-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 06 Feb 2013 11:58:51 +0000
+
+knavalbattle (4:4.9.98-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release candidate
+  * Add missing .install file
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 18 Jan 2013 15:46:26 +0000
+
+knavalbattle (4:4.9.97-0ubuntu3) raring; urgency=low
+
+  * Rename kbattleships to kbattleship as that's the correct name of the
+    old package
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Mon, 14 Jan 2013 19:49:21 +0100
+
+knavalbattle (4:4.9.97-0ubuntu2) raring; urgency=low
+
+  * Add transitional package for kbattleships
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 14 Jan 2013 14:15:01 +0000
+
+knavalbattle (4:4.9.97-0ubuntu1) raring; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 03 Jan 2013 22:39:09 +0100
+
+knavalbattle (4:4.9.95-0ubuntu1) raring; urgency=low
+
+  * Install to /usr/games
+  * Version dependency on kdegames-data
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Dec 2012 23:35:09 +0000
+
+knavalbattle (4:4.9.90-0ubuntu1) raring; urgency=low
+
+  * Initial release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 07 Dec 2012 18:00:35 +0000
